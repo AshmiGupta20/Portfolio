@@ -1,0 +1,1711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Ashmi Gupta | Data Analyst Portfolio</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+
+        /* =========================================
+           1. COLOR VARIABLES
+        ========================================= */
+
+        :root {
+
+            /* Main green colors */
+            --primary: #556B2F;
+            --secondary: #879b68;
+            --accent: #a8b89a;
+
+            /* Text colors */
+            --dark: #29352a;
+            --text: #4f5c50;
+            --muted: #788278;
+
+            /* Background colors */
+            --background: #f7f8f3;
+            --white: #ffffff;
+
+            /* Light green backgrounds */
+            --light-purple: #e9eee4;
+            --light-blue: #edf2e9;
+
+            /* Borders */
+            --border: #dfe5d9;
+        }
+
+
+        /* =========================================
+           2. RESET
+        ========================================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+
+        /* =========================================
+           3. BODY
+        ========================================= */
+
+        body {
+
+            font-family: "DM Sans", sans-serif;
+
+            background: var(--background);
+
+            color: var(--text);
+
+            line-height: 1.6;
+        }
+
+
+        /* =========================================
+           4. NAVIGATION BAR
+        ========================================= */
+
+        nav {
+
+            position: fixed;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+
+            z-index: 1000;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            padding: 18px 8%;
+
+            background: rgba(255, 255, 255, 0.94);
+
+            backdrop-filter: blur(12px);
+
+            border-bottom: 1px solid var(--border);
+        }
+
+
+        /* Logo */
+
+        .logo {
+
+            font-size: 25px;
+
+            font-weight: 700;
+
+            color: var(--dark);
+        }
+
+
+        .logo span {
+
+            color: var(--primary);
+        }
+
+
+        /* Navigation links */
+
+        nav ul {
+
+            display: flex;
+
+            gap: 30px;
+
+            list-style: none;
+        }
+
+
+        nav a {
+
+            text-decoration: none;
+
+            color: var(--text);
+
+            font-weight: 500;
+
+            transition: 0.3s;
+        }
+
+
+        nav a:hover {
+
+            color: var(--primary);
+        }
+
+
+        /* =========================================
+           5. HERO SECTION
+        ========================================= */
+
+        .hero {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 70px;
+
+            padding: 130px 8% 80px;
+
+            background:
+
+                radial-gradient(
+                    circle at 85% 25%,
+                    rgba(135, 155, 104, 0.16),
+                    transparent 30%
+                ),
+
+                radial-gradient(
+                    circle at 10% 80%,
+                    rgba(99, 122, 91, 0.10),
+                    transparent 30%
+                );
+        }
+
+
+        /* Hero text */
+
+        .hero-content {
+
+            max-width: 650px;
+        }
+
+
+        .hello {
+
+            color: var(--primary);
+
+            font-size: 18px;
+
+            font-weight: 600;
+
+            margin-bottom: 10px;
+        }
+
+
+        /* Main name */
+
+        .hero h1 {
+
+            font-size: clamp(48px, 7vw, 76px);
+
+            line-height: 1.05;
+
+            color: var(--dark);
+
+            margin-bottom: 15px;
+
+            font-weight: 700;
+        }
+
+
+        /* Italic part of name */
+
+        .hero h1 span {
+
+            color: var(--primary);
+
+            font-family: "Playfair Display", serif;
+
+            font-style: italic;
+
+            font-weight: 500;
+        }
+
+
+        /* Job title */
+
+        .role {
+
+            font-size: 25px;
+
+            font-weight: 600;
+
+            color: var(--secondary);
+
+            margin-bottom: 20px;
+        }
+
+
+        /* Hero description */
+
+        .hero p {
+
+            color: var(--muted);
+
+            font-size: 18px;
+
+            max-width: 600px;
+
+            margin-bottom: 30px;
+        }
+
+
+        /* Buttons container */
+
+        .buttons {
+
+            display: flex;
+
+            gap: 15px;
+
+            flex-wrap: wrap;
+        }
+
+
+        /* General button */
+
+        .btn {
+
+            display: inline-block;
+
+            padding: 13px 25px;
+
+            border-radius: 30px;
+
+            text-decoration: none;
+
+            font-weight: 600;
+
+            transition: 0.3s;
+        }
+
+
+        /* Main button */
+
+        .btn-primary {
+
+            color: white;
+
+            background:
+
+                linear-gradient(
+                    90deg,
+                    var(--primary),
+                    var(--secondary)
+                );
+
+            box-shadow:
+                0 8px 20px rgba(99, 122, 91, 0.20);
+        }
+
+
+        /* Secondary button */
+
+        .btn-outline {
+
+            color: var(--primary);
+
+            background: white;
+
+            border: 1px solid #d4ddcf;
+        }
+
+
+        /* Button hover */
+
+        .btn:hover {
+
+            transform: translateY(-4px);
+        }
+
+
+        /* =========================================
+           6. PROFILE IMAGE
+        ========================================= */
+
+        .profile-wrapper {
+
+            position: relative;
+
+            width: 330px;
+
+            height: 330px;
+
+            flex-shrink: 0;
+        }
+
+
+        /* Green circle behind image */
+
+        .profile-wrapper::before {
+
+            content: "";
+
+            position: absolute;
+
+            inset: -12px;
+
+            border-radius: 50%;
+
+            background:
+
+                linear-gradient(
+                    135deg,
+                    #637a5b,
+                    #a8b89a,
+                    #879b68
+                );
+
+            z-index: 0;
+        }
+
+
+        /* Decorative circle */
+
+        .profile-wrapper::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 70px;
+
+            height: 70px;
+
+            right: -20px;
+
+            bottom: 20px;
+
+            background: #e1e8da;
+
+            border-radius: 50%;
+
+            z-index: -1;
+        }
+
+
+        /* Actual profile image */
+
+        .profile-wrapper img {
+
+            position: relative;
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            border-radius: 50%;
+
+            border: 8px solid white;
+
+            z-index: 1;
+
+            box-shadow:
+                0 20px 50px rgba(60, 75, 60, 0.15);
+        }
+
+
+        /* =========================================
+           7. GENERAL SECTION
+        ========================================= */
+
+        section {
+
+            padding: 100px 8%;
+        }
+
+
+        /* Section heading container */
+
+        .section-title {
+
+            text-align: center;
+
+            margin-bottom: 55px;
+        }
+
+
+        /* Section heading */
+
+        .section-title h2 {
+
+            font-size: 42px;
+
+            color: var(--dark);
+
+            margin-bottom: 8px;
+
+            font-weight: 700;
+
+            letter-spacing: -0.5px;
+        }
+
+
+        /* Small text under heading */
+
+        .section-title p {
+
+            color: var(--muted);
+        }
+
+
+        /* Italic highlighted word */
+
+        .section-title span {
+
+            color: var(--primary);
+
+            font-family: "Playfair Display", serif;
+
+            font-style: italic;
+
+            font-weight: 500;
+        }
+
+
+        /* =========================================
+           8. ABOUT SECTION
+        ========================================= */
+
+        .about-container {
+
+            max-width: 900px;
+
+            margin: auto;
+
+            padding: 40px;
+
+            background: white;
+
+            border-radius: 20px;
+
+            border: 1px solid var(--border);
+
+            box-shadow:
+                0 15px 40px rgba(60, 75, 60, 0.06);
+        }
+
+
+        .about-container p {
+
+            color: var(--muted);
+
+            font-size: 18px;
+
+            text-align: center;
+        }
+
+
+        /* =========================================
+           9. PROJECTS SECTION
+        ========================================= */
+
+        .projects {
+
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 25px;
+
+            max-width: 1100px;
+
+            margin: auto;
+        }
+
+
+        /* Project card */
+
+        .project-card {
+
+            background: white;
+
+            padding: 30px;
+
+            border-radius: 18px;
+
+            border: 1px solid var(--border);
+
+            transition: 0.35s;
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+
+        /* Green line on top */
+
+        .project-card::before {
+
+            content: "";
+
+            position: absolute;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+
+            height: 4px;
+
+            background:
+
+                linear-gradient(
+                    90deg,
+                    var(--primary),
+                    var(--secondary)
+                );
+        }
+
+
+        /* Project hover */
+
+        .project-card:hover {
+
+            transform: translateY(-8px);
+
+            box-shadow:
+                0 20px 45px rgba(60, 75, 60, 0.10);
+        }
+
+
+        /* Project number */
+
+        .project-number {
+
+            display: inline-flex;
+
+            width: 45px;
+
+            height: 45px;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border-radius: 12px;
+
+            background: var(--light-purple);
+
+            color: var(--primary);
+
+            font-weight: 700;
+
+            margin-bottom: 18px;
+        }
+
+
+        /* Project title */
+
+        .project-card h3 {
+
+            color: var(--dark);
+
+            font-size: 21px;
+
+            margin-bottom: 10px;
+        }
+
+
+        /* Project description */
+
+        .project-card p {
+
+            color: var(--muted);
+
+            margin-bottom: 18px;
+        }
+
+
+        /* Technology tags */
+
+        .tech {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 8px;
+        }
+
+
+        .tech span {
+
+            padding: 6px 12px;
+
+            border-radius: 20px;
+
+            background: #edf2e9;
+
+            color: #637a5b;
+
+            font-size: 13px;
+
+            font-weight: 600;
+        }
+
+
+        /* =========================================
+           10. SKILLS
+        ========================================= */
+
+        .skills-container {
+
+            max-width: 950px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 30px;
+        }
+
+
+        /* Skill category box */
+
+        .skill-box {
+
+            background: white;
+
+            padding: 30px;
+
+            border-radius: 18px;
+
+            border: 1px solid var(--border);
+
+            box-shadow:
+                0 10px 30px rgba(60, 75, 60, 0.05);
+        }
+
+
+        .skill-box h3 {
+
+            color: var(--dark);
+
+            margin-bottom: 20px;
+        }
+
+
+        /* Skill list */
+
+        .skill-list {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+        }
+
+
+        /* Individual skill */
+
+        .skill {
+
+            padding: 9px 16px;
+
+            background: #e9eee4;
+
+            color: #5c7154;
+
+            border-radius: 25px;
+
+            font-size: 14px;
+
+            font-weight: 600;
+        }
+
+
+        /* Soft skill colors */
+
+        .soft .skill {
+
+            background: #edf2e9;
+
+            color: #637a5b;
+        }
+
+
+        /* =========================================
+           11. CONTACT SECTION
+        ========================================= */
+
+        .contact-box {
+
+            max-width: 850px;
+
+            margin: auto;
+
+            text-align: center;
+
+            background: white;
+
+            padding: 45px 30px;
+
+            border-radius: 22px;
+
+            border: 1px solid var(--border);
+
+            box-shadow:
+                0 15px 40px rgba(60, 75, 60, 0.07);
+        }
+
+
+        .contact-box h3 {
+
+            color: var(--dark);
+
+            font-size: 25px;
+
+            margin-bottom: 10px;
+        }
+
+
+        .contact-box > p {
+
+            color: var(--muted);
+
+            margin-bottom: 30px;
+        }
+
+
+        /* Contact links */
+
+        .contact-details {
+
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 15px;
+        }
+
+
+        .contact-details a {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 8px;
+
+            text-decoration: none;
+
+            color: var(--text);
+
+            padding: 12px 18px;
+
+            background: #fafbf8;
+
+            border: 1px solid var(--border);
+
+            border-radius: 12px;
+
+            transition: 0.3s;
+        }
+
+
+        .contact-details a:hover {
+
+            color: var(--primary);
+
+            border-color: #c6d2bf;
+
+            transform: translateY(-3px);
+        }
+
+
+        /* =========================================
+           12. FOOTER
+        ========================================= */
+
+        footer {
+
+            text-align: center;
+
+            padding: 25px;
+
+            background: white;
+
+            border-top: 1px solid var(--border);
+
+            color: var(--muted);
+        }
+
+
+        /* =========================================
+           13. TABLET RESPONSIVENESS
+        ========================================= */
+
+        @media (max-width: 850px) {
+
+            /* Navigation */
+
+            nav {
+
+                padding: 15px 5%;
+            }
+
+
+            nav ul {
+
+                gap: 13px;
+            }
+
+
+            nav a {
+
+                font-size: 13px;
+            }
+
+
+            /* Hero */
+
+            .hero {
+
+                flex-direction: column-reverse;
+
+                text-align: center;
+
+                padding-top: 130px;
+            }
+
+
+            .hero-content {
+
+                max-width: 700px;
+            }
+
+
+            .hero p {
+
+                margin-left: auto;
+
+                margin-right: auto;
+            }
+
+
+            .buttons {
+
+                justify-content: center;
+            }
+
+
+            /* Profile image */
+
+            .profile-wrapper {
+
+                width: 250px;
+
+                height: 250px;
+            }
+
+
+            /* Projects */
+
+            .projects {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            /* Skills */
+
+            .skills-container {
+
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+        /* =========================================
+           14. MOBILE RESPONSIVENESS
+        ========================================= */
+
+        @media (max-width: 520px) {
+
+            /* Hide navigation links */
+
+            nav ul {
+
+                display: none;
+            }
+
+
+            /* Main heading */
+
+            .hero h1 {
+
+                font-size: 48px;
+            }
+
+
+            /* Job title */
+
+            .role {
+
+                font-size: 20px;
+            }
+
+
+            /* Section spacing */
+
+            section {
+
+                padding: 75px 6%;
+            }
+
+
+            /* Section heading */
+
+            .section-title h2 {
+
+                font-size: 32px;
+            }
+
+
+            /* About */
+
+            .about-container {
+
+                padding: 25px;
+            }
+
+
+            /* Project cards */
+
+            .project-card {
+
+                padding: 25px;
+            }
+
+
+            /* Contact */
+
+            .contact-box {
+
+                padding: 30px 18px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+
+    <nav>
+
+        <div class="logo">
+            Ashmi<span>.</span>
+        </div>
+
+
+        <ul>
+
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <section class="hero" id="home">
+
+
+        <div class="hero-content">
+
+
+            <div class="hello">
+                Hello, I'm
+            </div>
+
+
+            <h1>
+                Ashmi <span>Gupta</span>
+            </h1>
+
+
+            <div class="role">
+                MCA Student | Aspiring Data Analyst
+            </div>
+
+
+            <p>
+
+                I’m an MCA student passionate about data analytics,
+                data science and turning raw data into meaningful
+                insights. I enjoy solving problems using Python,
+                SQL and machine learning techniques.
+
+            </p>
+
+
+            <div class="buttons">
+
+
+                <a
+                    href="#projects"
+                    class="btn btn-primary"
+                >
+                    Explore My Projects
+                </a>
+
+
+                <a
+                    href="#contact"
+                    class="btn btn-outline"
+                >
+                    Let's Connect
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+
+       
+        <div class="profile-wrapper">
+
+            <img
+                src="ashmi.jpeg"
+                alt="Ashmi Gupta"
+            >
+
+        </div>
+
+    </section>
+
+    <section id="about">
+
+
+        <div class="section-title">
+
+            <h2>
+                About <span>Me</span>
+            </h2>
+
+            <p>
+                Get to know me
+            </p>
+
+        </div>
+
+
+
+        <div class="about-container">
+
+            <p>
+
+                I’m an MCA student with a strong interest in data
+                analytics and data-driven problem solving. I enjoy
+                working with Python, SQL, and data science techniques
+                to transform raw data into meaningful insights.
+                Through academic and personal projects, I’ve explored
+                machine learning, deep learning, and analytics-based
+                solutions. I’m currently building my skills and
+                looking forward to starting my career as a Data Analyst,
+                where I can use data to support smarter business
+                decisions.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <section id="projects">
+
+
+        <div class="section-title">
+
+            <h2>
+                My <span>Projects</span>
+            </h2>
+
+            <p>
+                Some of the projects I've worked on
+            </p>
+
+        </div>
+
+
+
+        <div class="projects">
+
+
+            <!-- PROJECT 1 -->
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    01
+                </div>
+
+
+                <h3>
+                    AI-Powered Financial Wellness Advisor
+                </h3>
+
+
+                <p>
+
+                    An intelligent financial wellness solution
+                    designed to analyze financial information
+                    and provide personalized insights and
+                    recommendations to help users make better
+                    financial decisions.
+
+                </p>
+
+
+                <div class="tech">
+
+                    <span>Python</span>
+
+                    <span>Data Science</span>
+
+                    <span>Data Analytics</span>
+
+                    <span>AI</span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PROJECT 2 -->
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    02
+                </div>
+
+
+                <h3>
+                    AI Resume Screening System
+                </h3>
+
+
+                <p>
+
+                    A machine learning-based system that analyzes
+                    resumes and helps identify candidates based
+                    on relevant skills, qualifications and job
+                    requirements.
+
+                </p>
+
+
+                <div class="tech">
+
+                    <span>Python</span>
+
+                    <span>Machine Learning</span>
+
+                    <span>NLP</span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PROJECT 3 -->
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    03
+                </div>
+
+
+                <h3>
+                    American Sign Language Recognition
+                </h3>
+
+
+                <p>
+
+                    A deep learning and data science project
+                    focused on recognizing American Sign Language
+                    gestures using image-based data and machine
+                    learning techniques.
+
+                </p>
+
+
+                <div class="tech">
+
+                    <span>Deep Learning</span>
+
+                    <span>Data Science</span>
+
+                    <span>Python</span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PROJECT 4 -->
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    04
+                </div>
+
+
+                <h3>
+                    Drive Tracker
+                </h3>
+
+
+                <p>
+
+                    A Python-based application designed to track
+                    and manage driving-related information in a
+                    simple and organized way.
+
+                </p>
+
+
+                <div class="tech">
+
+                    <span>Python</span>
+
+                    <span>Data Handling</span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PROJECT 5 -->
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    05
+                </div>
+
+
+                <h3>
+                    Online Voting System
+                </h3>
+
+
+                <p>
+
+                    A Java-based voting system designed to provide
+                    a simple and structured platform for conducting
+                    online voting and managing voting information.
+
+                </p>
+
+
+                <div class="tech">
+
+                    <span>Java</span>
+
+                    <span>Database</span>
+
+                    <span>OOP</span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <section id="skills">
+
+
+        <div class="section-title">
+
+            <h2>
+                My <span>Skills</span>
+            </h2>
+
+            <p>
+                Technical expertise and professional strengths
+            </p>
+
+        </div>
+
+
+
+        <div class="skills-container">
+
+
+            <!-- TECHNICAL SKILLS -->
+
+            <div class="skill-box">
+
+                <h3>
+                    💻 Technical Skills
+                </h3>
+
+
+                <div class="skill-list">
+
+
+                    <div class="skill">
+                        Python
+                    </div>
+
+
+                    <div class="skill">
+                        SQL
+                    </div>
+
+
+                    <div class="skill">
+                        HTML
+                    </div>
+
+
+                    <div class="skill">
+                        CSS
+                    </div>
+
+
+                    <div class="skill">
+                        JavaScript
+                    </div>
+
+
+                    <div class="skill">
+                        Data Analytics
+                    </div>
+
+
+                    <div class="skill">
+                        Data Science
+                    </div>
+
+
+                    <div class="skill">
+                        Machine Learning
+                    </div>
+
+
+                    <div class="skill">
+                        Deep Learning
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="skill-box soft">
+
+                <h3>
+                    🤝 Soft Skills
+                </h3>
+
+
+                <div class="skill-list">
+
+
+                    <div class="skill">
+                        Team Coordination
+                    </div>
+
+
+                    <div class="skill">
+                        Communication
+                    </div>
+
+
+                    <div class="skill">
+                        Teamwork
+                    </div>
+
+
+                    <div class="skill">
+                        Problem Solving
+                    </div>
+
+
+                    <div class="skill">
+                        Time Management
+                    </div>
+
+
+                    <div class="skill">
+                        Adaptability
+                    </div>
+
+
+                    <div class="skill">
+                        Leadership
+                    </div>
+
+
+                    <div class="skill">
+                        Critical Thinking
+                    </div>
+
+
+                    <div class="skill">
+                        Collaboration
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <section id="contact">
+
+
+        <div class="section-title">
+
+            <h2>
+                Let's <span>Connect</span>
+            </h2>
+
+
+            <p>
+                I'm always open to new opportunities and conversations
+            </p>
+
+        </div>
+
+
+
+        <div class="contact-box">
+
+
+            <h3>
+                Have an opportunity or project?
+            </h3>
+
+
+            <p>
+
+                Feel free to reach out. I'd be happy to connect,
+                collaborate and discuss opportunities in data analytics.
+
+            </p>
+
+
+
+            <div class="contact-details">
+
+
+                <a href="mailto:guptaashmi041@gmail.com">
+
+                    📧
+
+                    guptaashmi041@gmail.com
+
+                </a>
+
+                <a href="tel:+919784561230">
+
+                    📞
+
+                    +91 97845 61230
+
+                </a>
+
+
+
+               
+                <a
+                    href="https://github.com/AshmiGupta20"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    💻
+                    GitHub
+
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    🔗
+                    LinkedIn
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 Ashmi Gupta • Aspiring Data Analyst
+        </p>
+
+    </footer>
+
+
+    <script>
+
+
+        /* Select all sections */
+
+        const sections =
+            document.querySelectorAll("section");
+
+
+
+        /* Create observer */
+
+        const observer =
+            new IntersectionObserver(
+
+                (entries) => {
+
+                    entries.forEach(
+                        (entry) => {
+
+
+                            /* If section is visible */
+
+                            if (entry.isIntersecting) {
+
+
+                                /* Fade in */
+
+                                entry.target.style.opacity = "1";
+
+
+                                /* Move into normal position */
+
+                                entry.target.style.transform =
+                                    "translateY(0)";
+
+                            }
+
+                        }
+                    );
+
+                },
+
+                {
+                    threshold: 0.12
+                }
+
+            );
+
+
+
+        /* Apply animation to each section */
+
+        sections.forEach(
+            (section) => {
+
+
+                /* Initial hidden state */
+
+                section.style.opacity = "0";
+
+
+                section.style.transform =
+                    "translateY(25px)";
+
+
+                /* Animation speed */
+
+                section.style.transition =
+                    "opacity 0.7s ease, transform 0.7s ease";
+
+
+                /* Start observing */
+
+                observer.observe(section);
+
+            }
+        );
+
+
+    </script>
+
+
+</body>
+
+</html>
